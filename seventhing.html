@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seven things you need to do if you want a responsive website</title>
+    <style>
+      body
+      {
+        border: 2px solid skyblue;
+        width: 1140px;
+        margin:0 auto;
+      }
+      .image-container
+      {
+        display: flex;
+      }
+      .image-container div
+      {
+        width:50%;
+      }
+      .image-container img{
+        width:100%
+      }
+
+      @media screen and (max-width:576px) {
+           
+        .image-container
+        {
+            /* flex-direction: column; */
+            flex-direction: column-reverse;
+
+        }
+        .image-container div {
+
+            width: 50%;
+
+        };
+      }
+    </style>
+
+</head>
+<body>
+    <h3>REsponsive layout</h3>
+   
+    <li>Viewport meta tag</li>
+    <li>Css Relative unite</li>
+    <li>body max width horizontal center align</li>
+    <li>image fluid</li>
+    <li>two colum flex and use media query with flex direction colum</li>
+    <li>multi colum:grid layout</li>
+    <li>Menu responsive we will need: javascript</li>
+
+    <div class="image-container">
+        <div><img src="images/healthy.jpeg" alt=""></div>
+        <div><img src="images/R.jpeg" alt=""></div>
+    </div>
+
+    
+</body>
+</html>
